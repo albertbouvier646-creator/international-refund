@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "title": "International Refund",
+    "subtitle": "Recupera tus reembolsos rápida y seguramente.",
+    "cta": "Comenzar",
+    "learn": "Más información",
+    "formLabel": "Calcula tu reembolso",
+    "estimate": "Reembolso medio en 7 días"
+  },
+  "services": [
+    {
+      "title": "Recuperación de IVA",
+      "desc": "Ayudamos a reclamar IVA de compras internacionales."
+    },
+    {
+      "title": "Reembolsos fiscales",
+      "desc": "Servicios para personas y empresas."
+    },
+    {
+      "title": "Asistencia",
+      "desc": "Soporte experto y proceso rápido."
+    }
+  ],
+  "stats": [
+    {
+      "value": "€1.2M",
+      "label": "Recuperado"
+    },
+    {
+      "value": "4.8k",
+      "label": "Casos"
+    },
+    {
+      "value": "97%",
+      "label": "Tasa de éxito"
+    },
+    {
+      "value": "7d",
+      "label": "Proceso medio"
+    }
+  ],
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Cuéntanos tu caso y te ayudamos.",
+    "name": "Tu nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "thanks": "¡Gracias! Hemos recibido tu mensaje."
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "contact": "support@internationalrefund.example"
+  }
+}
