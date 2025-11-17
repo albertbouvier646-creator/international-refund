@@ -1,0 +1,5 @@
+'use client'
+import { useLocale } from '../context/LanguageProvider'
+import { useState } from 'react'
+export default function Contact(){ const { t } = useLocale(); const [name,setName] = useState(''); const [email,setEmail] = useState(''); const [msg,setMsg] = useState(''); const submit = (e)=>{ e.preventDefault(); alert(t.contact.thanks); setName(''); setEmail(''); setMsg('') }
+return (<section id='contact' className='mt-12 bg-white p-6 rounded-lg shadow-sm'><h3 className='text-xl font-semibold'>{t.contact.title}</h3><p className='text-gray-600 mt-2'>{t.contact.subtitle}</p><form onSubmit={submit} className='mt-4 grid grid-cols-1 md:grid-cols-2 gap-4'><input value={name} onChange={(e)=>setName(e.target.value)} placeholder={t.contact.name} className='p-2 border rounded' /><input value={email} onChange={(e)=>setEmail(e.target.value)} placeholder={t.contact.email} className='p-2 border rounded' /><textarea value={msg} onChange={(e)=>setMsg(e.target.value)} placeholder={t.contact.message} className='p-2 border rounded md:col-span-2' rows={4} /><button type='submit' className='bg-green-600 text-white px-4 py-2 rounded'>{t.contact.send}</button></form></section>) }

@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "title": "International Refund",
+    "subtitle": "Récupérez vos remboursements rapidement et en toute sécurité.",
+    "cta": "Commencer",
+    "learn": "En savoir plus",
+    "formLabel": "Estimez votre remboursement",
+    "estimate": "Remboursement moyen en 7 jours"
+  },
+  "services": [
+    {
+      "title": "Récupération de TVA",
+      "desc": "Nous aidons à réclamer la TVA sur les achats internationaux."
+    },
+    {
+      "title": "Remboursements fiscaux",
+      "desc": "Services de remboursement pour particuliers et entreprises."
+    },
+    {
+      "title": "Assistance",
+      "desc": "Support expert et traitement rapide."
+    }
+  ],
+  "stats": [
+    {
+      "value": "€1.2M",
+      "label": "Récupéré"
+    },
+    {
+      "value": "4.8k",
+      "label": "Dossiers"
+    },
+    {
+      "value": "97%",
+      "label": "Taux de réussite"
+    },
+    {
+      "value": "7j",
+      "label": "Process moyen"
+    }
+  ],
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Parlez-nous de votre cas, nous vous aiderons.",
+    "name": "Votre nom",
+    "email": "Adresse e-mail",
+    "message": "Message",
+    "send": "Envoyer",
+    "thanks": "Merci ! Nous avons reçu votre message."
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "contact": "support@internationalrefund.example"
+  }
+}
