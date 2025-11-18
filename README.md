@@ -1,1 +1,1 @@
-International Refund - One-page Next.js starter. Copy into your Next.js project root and run npm install && npm run dev
+Rebuilt project scaffolding created from your uploaded Base44 site. Review /components to refine layout and replace placeholder OriginalPage.
