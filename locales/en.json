@@ -1,0 +1,78 @@
+{
+  "hero": {
+    "title": "Claim your refunds simply",
+    "subtitle": "We provide professional, reliable and fast tax refund services worldwide.",
+    "cta": "Get started"
+  },
+  "partners": [
+    "Visa",
+    "Mastercard",
+    "DHL",
+    "Stripe"
+  ],
+  "stats": [
+    {
+      "value": "€1.2M",
+      "label": "Recovered"
+    },
+    {
+      "value": "4.8k",
+      "label": "Cases"
+    },
+    {
+      "value": "97%",
+      "label": "Success rate"
+    },
+    {
+      "value": "7d",
+      "label": "Avg process"
+    }
+  ],
+  "how": {
+    "title": "How it works",
+    "desc": "We analyze your spend and claim refunds back to your account."
+  },
+  "services": [
+    {
+      "title": "VAT Recovery",
+      "desc": "We help reclaim VAT from international purchases."
+    },
+    {
+      "title": "Tax Refunds",
+      "desc": "Services for individuals and businesses."
+    },
+    {
+      "title": "Assistance",
+      "desc": "Expert support and fast processing."
+    }
+  ],
+  "testimonials": {
+    "title": "Testimonials",
+    "items": [
+      "Great experience.",
+      "Fast and professional.",
+      "Recommended!"
+    ]
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "Tell us about your case and we will assist you.",
+    "name": "Your name",
+    "email": "Email address",
+    "send": "Send",
+    "thanks": "Thanks! We received your message."
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "q": "How does it work?",
+        "a": "You submit a claim and we handle the rest."
+      },
+      {
+        "q": "How much does it cost?",
+        "a": "Our fees are transparent and success-based."
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "hero": {
+    "title": "Recupera tus reembolsos",
+    "subtitle": "Ofrecemos servicios de reembolso de impuestos profesionales, fiables y rápidos en todo el mundo.",
+    "cta": "Comenzar"
+  },
+  "partners": [
+    "Visa",
+    "Mastercard",
+    "DHL",
+    "Stripe"
+  ],
+  "stats": [
+    {
+      "value": "€1.2M",
+      "label": "Recuperado"
+    },
+    {
+      "value": "4.8k",
+      "label": "Casos"
+    },
+    {
+      "value": "97%",
+      "label": "Tasa de éxito"
+    },
+    {
+      "value": "7d",
+      "label": "Proceso medio"
+    }
+  ],
+  "how": {
+    "title": "Cómo funciona",
+    "desc": "Analizamos tus gastos y reclamamos reembolsos a tu cuenta."
+  },
+  "services": [
+    {
+      "title": "Recuperación de IVA",
+      "desc": "Ayudamos a reclamar IVA de compras internacionales."
+    },
+    {
+      "title": "Reembolsos fiscales",
+      "desc": "Servicios para particulares y empresas."
+    },
+    {
+      "title": "Asistencia",
+      "desc": "Soporte experto y procesamiento rápido."
+    }
+  ],
+  "testimonials": {
+    "title": "Testimonios",
+    "items": [
+      "Gran experiencia.",
+      "Rápido y profesional.",
+      "¡Recomendado!"
+    ]
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Cuéntanos tu caso y te ayudaremos.",
+    "name": "Tu nombre",
+    "email": "Correo electrónico",
+    "send": "Enviar",
+    "thanks": "¡Gracias! Hemos recibido tu mensaje."
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "q": "¿Cómo funciona?",
+        "a": "Envías una solicitud y nosotros nos encargamos del resto."
+      },
+      {
+        "q": "¿Cuánto cuesta?",
+        "a": "Nuestros honorarios son transparentes y basados en el éxito."
+      }
+    ]
+  }
+}
