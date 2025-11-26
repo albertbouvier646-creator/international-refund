@@ -1,5 +1,5 @@
+// 1. Définition et exportation de l'objet de traduction
 export const translations: Record<string, any> = {
-  // L'objet de traduction doit contenir TOUTES les langues.
   en: {
     // Hero Section
     government_approved: "Government Approved Agency",
@@ -18,116 +18,124 @@ export const translations: Record<string, any> = {
     hero_success_rate: "Success Rate",
     hero_support: "Support",
     hero_iso_certified: "ISO Certified & Fully Insured Operations",
-
+    
     // Partners Section
     partners_badge: "Trusted Partnerships",
     partners_title: "Partnered with Global Leaders",
     partners_subtitle: "Collaborating with internationally recognized organizations and regulatory bodies",
     partners_footer: "Authorized and regulated by international financial authorities",
-
+    
     // Stats Section
     stats_funds: "Total Funds Recovered",
     stats_claims: "Successful Claims",
     stats_countries: "Countries Covered",
     stats_rate: "Success Rate",
-
+    
     // How It Works Section
     how_title: "How It Works",
-    how_subtitle: "Our simple, four-step process for secure fund recovery.",
-    how_step1_title: "Submit Your Case",
-    how_step1_desc: "Provide us with the details of your loss through our secure online form. Our initial consultation is free and confidential.",
+    how_subtitle: "Our streamlined four-step recovery process ensures the highest chances of success.",
+    how_step1_title: "Free Case Review",
+    how_step1_desc: "Submit your case details via our secure form. Our team performs a preliminary forensic analysis at no cost.",
     how_step2_title: "Forensic Investigation",
-    how_step2_desc: "Our financial forensic team conducts an in-depth, on-chain analysis to trace and secure your lost assets.",
+    how_step2_desc: "We deploy on-chain analytics and legal expertise to trace funds, identify perpetrators, and build a strong legal file.",
     how_step3_title: "Legal Restitution",
-    how_step3_desc: "Our legal experts prepare and file a claim with the relevant international authorities and financial institutions.",
+    how_step3_desc: "Our legal team initiates action, working with banks, exchanges, and international law enforcement to freeze and reclaim assets.",
     how_step4_title: "Fund Recovery",
-    how_step4_desc: "Once the case is successful, your recovered funds are securely returned to your designated account.",
-
+    how_step4_desc: "Once successfully recovered, your rightful funds are securely transferred back to your designated account.",
+    
     // Services Section
     services_title: "Our Specialized Services",
-    services_subtitle: "Expert recovery across multiple financial sectors.",
-    service1_title: "Crypto Recovery",
-    service1_desc: "Specialized in tracing and recovering digital assets lost to exchange hacks, investment scams, or wallet fraud.",
-    service2_title: "Investment Fraud",
-    service2_desc: "Targeted recovery of funds lost through fraudulent brokers, trading platforms, and Ponzi schemes.",
-    service3_title: "Insurance Claims",
-    service3_desc: "Assistance with complex denied or delayed international insurance claim payouts and disputes.",
-    service4_title: "Cross-Border Banking",
-    service4_desc: "Handling recovery cases involving international bank transfers and cross-jurisdictional financial disputes.",
-    service5_title: "Wire Transfer Fraud",
-    service5_desc: "Rapid response and tracing for funds lost due to business email compromise (BEC) and unauthorized wire transfers.",
-    service6_title: "AML/KYC Disputes",
-    service6_desc: "Resolution of issues involving funds frozen due to Anti-Money Laundering (AML) or Know Your Customer (KYC) compliance disputes.",
-
+    services_subtitle: "We leverage cutting-edge technology and a global legal network to handle the most complex recovery cases.",
+    service1_title: "Crypto Fraud Recovery",
+    service1_desc: "Specialized in tracing and recovering funds from investment scams, exchange hacks, and blockchain fraud.",
+    service2_title: "Investment Scam Recovery",
+    service2_desc: "Handling losses from fake brokers, trading platforms, and unauthorized investment schemes.",
+    service3_title: "International Financial Disputes",
+    service3_desc: "Resolving complex cross-border financial litigation and reclaiming assets held in foreign jurisdictions.",
+    service4_title: "Business Asset Recovery",
+    service4_desc: "Assisting corporations in recovering misappropriated funds, intellectual property, and settling commercial disputes.",
+    service5_title: "Credit Card & Bank Fraud",
+    service5_desc: "Aggressive action against unauthorized credit card charges, wire transfers, and bank account compromises.",
+    service6_title: "Insurance Claim Assistance",
+    service6_desc: "Expert legal support to overturn wrongly denied insurance claims and secure rightful payouts.",
+    
     // Testimonials Section
-    testimonials_title: "Trusted by Clients Worldwide",
-    testimonials_subtitle: "Hear from those who have successfully recovered their funds with our help.",
+    testimonials_title: "Client Success Stories",
+    testimonials_subtitle: "Read how we helped victims worldwide recover their lost assets.",
     testimonials_recovered: "Recovered",
-
+    
     // Contact Section
     contact_title: "Start Your Recovery Today",
-    contact_subtitle: "Don't wait. The sooner you act, the higher the chances of a successful recovery. Contact us for a free, confidential consultation.",
-    contact_name_label: "Full Name",
-    contact_email_label: "Email Address",
-    contact_phone_label: "Phone Number (with Country Code)",
-    contact_case_type: "Type of Loss (e.g., Crypto Scam, Wire Fraud)",
-    contact_amount: "Estimated Amount Lost (in USD)",
-    contact_message: "Briefly Describe Your Situation",
-    contact_submit: "Submit Confidential Claim",
-    contact_success: "Thank you for submitting your claim! We will review your information and contact you shortly.",
+    contact_subtitle: "Fill out the form below for a free, confidential case review. A dedicated case manager will contact you within the hour.",
+    contact_name_label: "Your Full Name",
+    contact_email_input: "Your Email Address",
+    contact_phone_input: "Your Phone Number",
+    contact_case_label: "Type of Case",
+    contact_amount_label: "Estimated Loss Amount (USD)",
+    contact_message_label: "Briefly Describe Your Situation",
+    contact_submit: "Submit Free Case Review",
+    contact_success: "Thank you! Your request has been received. A case manager will contact you within 1 hour.",
+    
     contact_call_label: "Call Our Helpline",
     contact_call_desc: "Speak directly with a case manager for urgent matters. Available 24/7.",
-    contact_email_label: "Email Support",
+    
+    // ⚠️ Correction: Removed the first duplicate key 'contact_email_label' here.
     contact_response: "Guaranteed response within 1 hour.",
     contact_hq: "Global Headquarters",
-    contact_location: "London, United Kingdom (Global Operations Center)",
-    contact_global: "Serving clients in over 150 countries.",
+    contact_location: "1401 H Street NW, Washington, D.C. 20005, USA",
+    contact_global: "Operating Globally Since 2012",
     contact_fast: "Fast Response Guaranteed",
-    contact_fast_desc: "A specialist will be assigned to your case within one business hour of submission.",
-
+    contact_fast_desc: "Our case review team operates 24/7. Submit your request now and get a guaranteed response within 60 minutes.",
+    
+    // 💡 Correction: Kept the last instance of 'contact_email_label'.
+    contact_email_label: "Email Support", 
+    
     // FAQ Section
     faq_title: "Frequently Asked Questions",
-    faq_subtitle: "Quick answers to the most common questions about our fund recovery process.",
-    faq_q1: "What is the initial process?",
-    faq_a1: "The process starts with a free, confidential consultation where we assess your case, determine jurisdiction, and advise on the next steps. There is no obligation to proceed.",
-    faq_q2: "What are your fees?",
-    faq_a2: "We primarily work on a **contingency basis**. This means we only charge a fee if we successfully recover your funds. Our fee is a percentage of the recovered amount, agreed upon upfront.",
-    faq_q3: "How long does a recovery take?",
-    faq_a3: "The timeline varies greatly depending on the complexity of the case, the jurisdiction, and the responsiveness of the entities involved. Simple cases can take a few weeks; complex international cases can take several months.",
+    faq_subtitle: "Immediate answers to the most common questions about our services.",
+    faq_q1: "What are your fees?",
+    faq_a1: "We operate on a contingency basis. There are no upfront fees for the case review or investigation. Our fee is a percentage of the funds successfully recovered, ensuring we are only paid when you get your money back.",
+    faq_q2: "How long does the recovery process take?",
+    faq_a2: "The duration varies depending on the complexity of the case, the jurisdiction involved, and the responsiveness of financial institutions. We prioritize speed and transparency, providing constant updates throughout the process.",
+    faq_q3: "What information do I need to provide?",
+    faq_a3: "We typically require identification documents, evidence of loss (transaction receipts, correspondence), and any legal documents related to the fraud or dispute.",
     faq_q4: "What is your success rate?",
-    faq_a4: "We have a 98% success rate on cases we accept. We only take cases where we believe there is a high probability of successful recovery, ensuring our resources are used effectively.",
-    faq_q5: "Can you recover funds lost in cryptocurrency?",
-    faq_a5: "Yes. We have a dedicated team of on-chain forensic specialists who work closely with law enforcement and exchanges to trace fraudulent crypto transactions.",
+    faq_a4: "Our success rate is over 98% for eligible cases. Our specialized focus on international fund recovery and our global network give us a competitive edge.",
+    faq_q5: "Do you handle cryptocurrency fraud?",
+    faq_a5: "Yes. We have a dedicated forensic team specializing in cryptocurrency transactions and work closely with law enforcement and exchanges.",
     faq_q6: "Do you operate internationally?",
-    faq_a6: "Yes, we operate in over 150 countries through our partnerships with organizations like the EU, IMF, ESMA, and others. Our global network allows us to handle cross-border cases effectively.",
-    faq_more: "Still have questions?",
+    faq_a6: "Yes, we operate in over 150 countries through our partnerships with organizations like the EU, IMF, ESMA, and others. Our global network allows us to effectively handle cross-border cases.",
+    faq_more: "Still Have Questions?",
     faq_contact: "Contact Our Team",
-
+    
     // NEW KEY
-    footer_whatsapp: "Contact Us on WhatsApp",
-
+    footer_whatsapp: "Contact us on WhatsApp",
+    
     // Chat
-    chat_welcome: "👋 Hello! Welcome to the International Refund Agency. I'm here to assist you with any questions about our fund recovery services. How can I help you today?",
+    chat_welcome: "👋 Hi! Welcome to International Refund Agency. I'm here to assist you with questions about our fund recovery services. How can I help you today?",
     chat_support_assistant: "Support Assistant",
-    chat_online: "Online - AI Powered",
+    chat_online: "Online - AI-Powered",
     chat_typing: "Typing...",
     chat_quick_questions: "Quick Questions:",
-    chat_placeholder: "Type your message...",
+    chat_placeholder: "Enter your message...",
     chat_powered: "Powered by AI • Available 24/7",
-    chat_need_help: "Need help? Chat with our AI Assistant!",
-
+    chat_need_help: "Need Help? Chat with our AI Assistant!",
+    
     quick_reply_1: "How does the recovery process work?",
     quick_reply_2: "What are your success rates?",
     quick_reply_3: "What types of cases do you handle?",
     quick_reply_4: "How long does recovery take?",
     quick_reply_5: "What are your fees?",
-    quick_reply_6: "Are my information secure?",
+    quick_reply_6: "Is my information safe?",
   },
-  // --- FR ---
+  
+  // =================================================================================================================================================
+  // FRENCH TRANSLATIONS (FR)
+  // =================================================================================================================================================
   fr: {
     // Hero Section
     government_approved: "Agence Approuvée par le Gouvernement",
-    hero_title: "Récupérez Votre",
+    hero_title: "Récupérez votre",
     hero_title_highlight: "Argent Légitime",
     hero_subtitle: "La seule agence internationale approuvée par le gouvernement spécialisée dans la récupération et le retour des fonds à leurs propriétaires légitimes dans le monde entier.",
     hero_verified_point_1: "Vérifié par les Autorités Internationales",
@@ -138,346 +146,367 @@ export const translations: Record<string, any> = {
     hero_trusted_globally: "Confiance Mondiale",
     hero_active: "Actif",
     hero_funds_recovered: "Fonds Récupérés",
-    hero_countries_served: "Pays Desservis",
+    hero_countries_served: "Pays Servis",
     hero_success_rate: "Taux de Réussite",
     hero_support: "Support",
     hero_iso_certified: "Certifié ISO et Opérations Entièrement Assurées",
-
+    
     // Partners Section
     partners_badge: "Partenariats de Confiance",
-    partners_title: "En Partenariat avec des Leaders Mondiaux",
-    partners_subtitle: "Collaboration avec des organisations et organismes de réglementation internationalement reconnus.",
-    partners_footer: "Autorisé et réglementé par les autorités financières internationales.",
-
+    partners_title: "Partenariat avec des Leaders Mondiaux",
+    partners_subtitle: "Collaboration avec des organisations internationalement reconnues et des organismes de réglementation.",
+    partners_footer: "Autorisé et réglementé par les autorités financières internationales",
+    
     // Stats Section
     stats_funds: "Total des Fonds Récupérés",
     stats_claims: "Réclamations Réussies",
     stats_countries: "Pays Couverts",
     stats_rate: "Taux de Réussite",
-
+    
     // How It Works Section
     how_title: "Comment Ça Marche",
-    how_subtitle: "Notre processus simple en quatre étapes pour une récupération de fonds sécurisée.",
-    how_step1_title: "Soumettez Votre Dossier",
-    how_step1_desc: "Fournissez-nous les détails de votre perte via notre formulaire en ligne sécurisé. Notre consultation initiale est gratuite et confidentielle.",
-    how_step2_title: "Enquête de Criminalistique",
-    how_step2_desc: "Notre équipe de criminalistique financière effectue une analyse approfondie et en chaîne pour retracer et sécuriser vos actifs perdus.",
+    how_subtitle: "Notre processus de récupération rationalisé en quatre étapes garantit les meilleures chances de succès.",
+    how_step1_title: "Évaluation Gratuite du Cas",
+    how_step1_desc: "Soumettez les détails de votre cas via notre formulaire sécurisé. Notre équipe effectue une analyse médico-légale préliminaire sans frais.",
+    how_step2_title: "Enquête Légale",
+    how_step2_desc: "Nous déployons l'analyse on-chain et l'expertise légale pour retracer les fonds, identifier les auteurs et constituer un dossier juridique solide.",
     how_step3_title: "Restitution Légale",
-    how_step3_desc: "Nos experts juridiques préparent et déposent une réclamation auprès des autorités internationales et des institutions financières concernées.",
+    how_step3_desc: "Notre équipe légale engage des poursuites, travaillant avec les banques, les bourses et les forces de l'ordre internationales pour geler et récupérer les actifs.",
     how_step4_title: "Récupération des Fonds",
-    how_step4_desc: "Une fois le dossier réussi, vos fonds récupérés sont retournés en toute sécurité sur votre compte désigné.",
-
+    how_step4_desc: "Une fois récupérés avec succès, vos fonds légitimes sont transférés en toute sécurité sur votre compte désigné.",
+    
     // Services Section
     services_title: "Nos Services Spécialisés",
-    services_subtitle: "Récupération experte dans plusieurs secteurs financiers.",
-    service1_title: "Récupération de Crypto",
-    service1_desc: "Spécialisés dans le traçage et la récupération d'actifs numériques perdus suite à des piratages d'échange, des escroqueries d'investissement ou des fraudes de portefeuille.",
-    service2_title: "Fraude à l'Investissement",
-    service2_desc: "Récupération ciblée des fonds perdus via des courtiers frauduleux, des plateformes de trading et des schémas de Ponzi.",
-    service3_title: "Réclamations d'Assurance",
-    service3_desc: "Assistance pour les paiements de réclamations d'assurance internationales complexes refusés ou retardés et les litiges.",
-    service4_title: "Banque Transfrontalière",
-    service4_desc: "Gestion des cas de récupération impliquant des virements bancaires internationaux et des litiges financiers transjuridictionnels.",
-    service5_title: "Fraude par Virement Bancaire",
-    service5_desc: "Réponse rapide et traçage des fonds perdus en raison de la compromission de la messagerie d'entreprise (BEC) et des virements bancaires non autorisés.",
-    service6_title: "Litiges AML/KYC",
-    service6_desc: "Résolution des problèmes impliquant des fonds gelés en raison de litiges de conformité Anti-Blanchiment (AML) ou Connaître Votre Client (KYC).",
-
+    services_subtitle: "Nous tirons parti d'une technologie de pointe et d'un réseau juridique mondial pour traiter les cas de récupération les plus complexes.",
+    service1_title: "Récupération de Fraude Crypto",
+    service1_desc: "Spécialisés dans le traçage et la récupération de fonds suite à des escroqueries d'investissement, des piratages d'échange et des fraudes blockchain.",
+    service2_title: "Récupération d'Escroquerie d'Investissement",
+    service2_desc: "Traitement des pertes dues à de faux courtiers, plateformes de trading et schémas d'investissement non autorisés.",
+    service3_title: "Litiges Financiers Internationaux",
+    service3_desc: "Résolution de litiges financiers transfrontaliers complexes et récupération d'actifs détenus dans des juridictions étrangères.",
+    service4_title: "Récupération d'Actifs d'Entreprise",
+    service4_desc: "Aide aux entreprises pour la récupération de fonds détournés, de propriété intellectuelle et le règlement de différends commerciaux.",
+    service5_title: "Fraude par Carte de Crédit et Bancaire",
+    service5_desc: "Action agressive contre les frais de carte de crédit non autorisés, les virements bancaires et les compromissions de comptes bancaires.",
+    service6_title: "Assistance aux Réclamations d'Assurance",
+    service6_desc: "Soutien juridique expert pour annuler les réclamations d'assurance injustement refusées et obtenir des paiements légitimes.",
+    
     // Testimonials Section
-    testimonials_title: "Approuvé par des Clients du Monde Entier",
-    testimonials_subtitle: "Écoutez ceux qui ont récupéré leurs fonds avec succès grâce à notre aide.",
-    testimonials_recovered: "Récupéré",
-
+    testimonials_title: "Témoignages Clients",
+    testimonials_subtitle: "Découvrez comment nous avons aidé des victimes du monde entier à récupérer leurs actifs perdus.",
+    testimonials_recovered: "Récupérés",
+    
     // Contact Section
     contact_title: "Commencez Votre Récupération Aujourd'hui",
-    contact_subtitle: "N'attendez pas. Plus vite vous agissez, plus les chances de succès de la récupération sont élevées. Contactez-nous pour une consultation gratuite et confidentielle.",
-    contact_name_label: "Nom Complet",
-    contact_email_label: "Adresse E-mail",
-    contact_phone_label: "Numéro de Téléphone (avec Code Pays)",
-    contact_case_type: "Type de Perte (ex: Escroquerie Crypto, Fraude par Virement)",
-    contact_amount: "Montant Estimé de la Perte (en USD)",
-    contact_message: "Décrivez Brièvement Votre Situation",
-    contact_submit: "Soumettre la Réclamation Confidentielle",
-    contact_success: "Merci d'avoir soumis votre réclamation ! Nous allons examiner vos informations et vous contacter sous peu.",
+    contact_subtitle: "Remplissez le formulaire ci-dessous pour une évaluation de cas gratuite et confidentielle. Un gestionnaire de cas dédié vous contactera dans l'heure.",
+    contact_name_label: "Votre Nom Complet",
+    contact_email_input: "Votre Adresse E-mail",
+    contact_phone_input: "Votre Numéro de Téléphone",
+    contact_case_label: "Type de Cas",
+    contact_amount_label: "Montant Estimé de la Perte (USD)",
+    contact_message_label: "Décrivez Brièvement Votre Situation",
+    contact_submit: "Soumettre l'Évaluation Gratuite du Cas",
+    contact_success: "Merci ! Votre demande a été reçue. Un gestionnaire de cas vous contactera dans un délai d'une heure.",
+    
     contact_call_label: "Appelez Notre Ligne d'Assistance",
     contact_call_desc: "Parlez directement à un gestionnaire de cas pour les questions urgentes. Disponible 24/7.",
-    contact_email_label: "Support par E-mail",
+    
+    // ⚠️ Correction: Removed the first duplicate key 'contact_email_label' here.
     contact_response: "Réponse garantie sous 1 heure.",
     contact_hq: "Siège Social Mondial",
-    contact_location: "Londres, Royaume-Uni (Centre d'Opérations Mondial)",
-    contact_global: "Au service de clients dans plus de 150 pays.",
+    contact_location: "1401 H Street NW, Washington, D.C. 20005, USA",
+    contact_global: "Opère Globalement Depuis 2012",
     contact_fast: "Réponse Rapide Garantie",
-    contact_fast_desc: "Un spécialiste sera assigné à votre dossier dans l'heure suivant sa soumission.",
-
+    contact_fast_desc: "Notre équipe d'examen de cas est opérationnelle 24/7. Soumettez votre demande maintenant et obtenez une réponse garantie dans les 60 minutes.",
+    
+    // 💡 Correction: Kept the last instance of 'contact_email_label'.
+    contact_email_label: "Support par E-mail", 
+    
     // FAQ Section
-    faq_title: "Questions Fréquentes",
-    faq_subtitle: "Réponses rapides aux questions les plus courantes sur notre processus de récupération de fonds.",
-    faq_q1: "Quel est le processus initial?",
-    faq_a1: "Le processus commence par une consultation gratuite et confidentielle où nous évaluons votre dossier, déterminons la juridiction et conseillons sur les prochaines étapes. Il n'y a aucune obligation de procéder.",
-    faq_q2: "Quels sont vos frais?",
-    faq_a2: "Nous travaillons principalement sur une **base de contingence**. Cela signifie que nous ne facturons des frais que si nous récupérons vos fonds avec succès. Nos frais sont un pourcentage du montant récupéré, convenu à l'avance.",
-    faq_q3: "Combien de temps prend une récupération?",
-    faq_a3: "Le calendrier varie considérablement en fonction de la complexité du dossier, de la juridiction et de la réactivité des entités impliquées. Les cas simples peuvent prendre quelques semaines; les cas internationaux complexes peuvent prendre plusieurs mois.",
-    faq_q4: "Quel est votre taux de réussite?",
-    faq_a4: "Nous avons un taux de réussite de 98% sur les dossiers que nous acceptons. Nous ne prenons que les cas où nous croyons qu'il y a une forte probabilité de récupération réussie, garantissant que nos ressources sont utilisées efficacement.",
-    faq_q5: "Pouvez-vous récupérer des fonds perdus en cryptomonnaie?",
-    faq_a5: "Oui. Nous avons une équipe dédiée de spécialistes en criminalistique en chaîne qui travaillent en étroite collaboration avec les forces de l'ordre et les plateformes d'échange pour tracer les transactions crypto frauduleuses.",
-    faq_q6: "Opérez-vous à l'international?",
-    faq_a6: "Oui, nous opérons dans plus de 150 pays grâce à nos partenariats avec des organisations comme l'UE, le FMI, l'ESMA et d'autres. Notre réseau mondial nous permet de traiter efficacement les cas transfrontaliers.",
-    faq_more: "Avez-vous encore des questions?",
-    faq_contact: "Contactez Notre Équipe",
-
+    faq_title: "Foire Aux Questions",
+    faq_subtitle: "Réponses immédiates aux questions les plus courantes sur nos services.",
+    faq_q1: "Quels sont vos frais ?",
+    faq_a1: "Nous travaillons sur la base de la contingence. Il n'y a pas de frais initiaux pour l'examen du cas ou l'enquête. Nos honoraires sont un pourcentage des fonds récupérés avec succès, garantissant que nous ne sommes payés que lorsque vous récupérez votre argent.",
+    faq_q2: "Combien de temps prend le processus de récupération ?",
+    faq_a2: "La durée varie en fonction de la complexité du cas, de la juridiction impliquée et de la réactivité des institutions financières. Nous priorisons la rapidité et la transparence, fournissant des mises à jour constantes tout au long du processus.",
+    faq_q3: "Quelles informations dois-je fournir ?",
+    faq_a3: "Nous exigeons généralement des documents d'identification, des preuves de perte (reçus de transaction, correspondance) et tout document juridique lié à la fraude ou au litige.",
+    faq_q4: "Quel est votre taux de réussite ?",
+    faq_a4: "Notre taux de réussite est supérieur à 98 % pour les cas éligibles. Notre concentration spécialisée sur la récupération de fonds internationaux et notre réseau mondial nous donnent un avantage concurrentiel.",
+    faq_q5: "Traitez-vous la fraude par cryptomonnaie ?",
+    faq_a5: "Oui. Nous avons une équipe légale et médico-légale spécialisée dans les transactions de cryptomonnaie et travaillons en étroite collaboration avec les forces de l'ordre et les bourses.",
+    faq_q6: "Opérez-vous à l'international ?",
+    faq_a6: "Oui, nous opérons dans plus de 150 pays grâce à nos partenariats avec des organisations comme l'UE, le FMI, l'ESMA et d'autres. Notre réseau mondial nous permet de gérer efficacement les cas transfrontaliers.",
+    faq_more: "Avez-vous Encore des Questions ?",
+    faq_contact: "Contacter Notre Équipe",
+    
     // NEW KEY
-    footer_whatsapp: "Contactez-nous sur WhatsApp",
-
+    footer_whatsapp: "Nous contacter via WhatsApp",
+    
     // Chat
-    chat_welcome: "👋 Bonjour! Bienvenue à l'Agence Internationale de Remboursement. Je suis là pour vous aider avec toutes les questions concernant nos services de récupération de fonds. Comment puis-je vous aider aujourd'hui?",
+    chat_welcome: "👋 Bonjour ! Bienvenue à l'Agence Internationale de Remboursement. Je suis là pour vous aider avec vos questions sur nos services de récupération de fonds. Comment puis-je vous aider aujourd'hui ?",
     chat_support_assistant: "Assistant de Support",
-    chat_online: "En Ligne - Optimisé par l'IA",
+    chat_online: "En Ligne - Optimisé par IA",
     chat_typing: "Écrit...",
     chat_quick_questions: "Questions Rapides :",
-    chat_placeholder: "Tapez votre message...",
-    chat_powered: "Optimisé par l'IA • Disponible 24/7",
-    chat_need_help: "Besoin d'aide ? Chattez avec notre Assistant IA !",
-
-    quick_reply_1: "Comment fonctionne le processus de récupération?",
-    quick_reply_2: "Quels sont vos taux de réussite?",
-    quick_reply_3: "Quels types de cas traitez-vous?",
-    quick_reply_4: "Combien de temps prend la récupération?",
-    quick_reply_5: "Quels sont vos frais?",
-    quick_reply_6: "Mes informations sont-elles sécurisées?",
+    chat_placeholder: "Entrez votre message...",
+    chat_powered: "Optimisé par IA • Disponible 24/7",
+    chat_need_help: "Besoin d'aide ? Discutez avec notre assistant IA !",
+    
+    quick_reply_1: "Comment fonctionne le processus de récupération ?",
+    quick_reply_2: "Quels sont vos taux de réussite ?",
+    quick_reply_3: "Quels types de cas traitez-vous ?",
+    quick_reply_4: "Combien de temps prend la récupération ?",
+    quick_reply_5: "Quels sont vos frais ?",
+    quick_reply_6: "Mes informations sont-elles en sécurité ?",
   },
-  // --- ES ---
+  
+  // =================================================================================================================================================
+  // SPANISH TRANSLATIONS (ES)
+  // =================================================================================================================================================
   es: {
     // Hero Section
     government_approved: "Agencia Aprobada por el Gobierno",
     hero_title: "Recupere Sus",
     hero_title_highlight: "Fondos Legítimos",
-    hero_subtitle: "La única agencia internacional aprobada por el gobierno especializada en recuperar y devolver fondos a sus legítimos propietarios en todo el mundo.",
+    hero_subtitle: "La única agencia internacional aprobada por el gobierno, especializada en la recuperación y devolución de fondos a sus legítimos propietarios en todo el mundo.",
     hero_verified_point_1: "Verificado por Autoridades Internacionales",
-    hero_verified_point_2: "Asociado con Organizaciones Globales",
+    hero_verified_point_2: "Socio de Organizaciones Globales",
     hero_verified_point_3: "Procesamiento Seguro 24/7",
     hero_start_claim: "Iniciar Su Reclamación",
     hero_learn_more: "Saber Más",
-    hero_trusted_globally: "Confiado Globalmente",
+    hero_trusted_globally: "Confianza Global",
     hero_active: "Activo",
     hero_funds_recovered: "Fondos Recuperados",
     hero_countries_served: "Países Atendidos",
     hero_success_rate: "Tasa de Éxito",
     hero_support: "Soporte",
     hero_iso_certified: "Certificado ISO y Operaciones Totalmente Aseguradas",
-
+    
     // Partners Section
     partners_badge: "Asociaciones de Confianza",
     partners_title: "Asociados con Líderes Globales",
-    partners_subtitle: "Colaborando con organizaciones y organismos reguladores reconocidos internacionalmente.",
-    partners_footer: "Autorizado y regulado por las autoridades financieras internacionales.",
-
+    partners_subtitle: "Colaborando con organizaciones y organismos reguladores reconocidos internacionalmente",
+    partners_footer: "Autorizado y regulado por autoridades financieras internacionales",
+    
     // Stats Section
     stats_funds: "Total de Fondos Recuperados",
     stats_claims: "Reclamaciones Exitosas",
     stats_countries: "Países Cubiertos",
     stats_rate: "Tasa de Éxito",
-
+    
     // How It Works Section
     how_title: "¿Cómo Funciona?",
-    how_subtitle: "Nuestro sencillo proceso de cuatro pasos para una recuperación de fondos segura.",
-    how_step1_title: "Enviar Su Caso",
-    how_step1_desc: "Proporcione los detalles de su pérdida a través de nuestro formulario en línea seguro. Nuestra consulta inicial es gratuita y confidencial.",
+    how_subtitle: "Nuestro proceso de recuperación simplificado de cuatro pasos garantiza las mayores posibilidades de éxito.",
+    how_step1_title: "Revisión Gratuita del Caso",
+    how_step1_desc: "Envíe los detalles de su caso a través de nuestro formulario seguro. Nuestro equipo realiza un análisis forense preliminar sin costo.",
     how_step2_title: "Investigación Forense",
-    how_step2_desc: "Nuestro equipo forense financiero realiza un análisis en cadena en profundidad para rastrear y asegurar sus activos perdidos.",
+    how_step2_desc: "Implementamos análisis en cadena y experiencia legal para rastrear fondos, identificar a los autores y construir un sólido expediente legal.",
     how_step3_title: "Restitución Legal",
-    how_step3_desc: "Nuestros expertos legales preparan y presentan una reclamación ante las autoridades internacionales y las instituciones financieras relevantes.",
+    how_step3_desc: "Nuestro equipo legal inicia acciones, trabajando con bancos, bolsas y fuerzas del orden internacionales para congelar y reclamar activos.",
     how_step4_title: "Recuperación de Fondos",
-    how_step4_desc: "Una vez que el caso es exitoso, sus fondos recuperados se devuelven de forma segura a su cuenta designada.",
-
+    how_step4_desc: "Una vez recuperados con éxito, sus fondos legítimos se transfieren de forma segura a su cuenta designada.",
+    
     // Services Section
     services_title: "Nuestros Servicios Especializados",
-    services_subtitle: "Recuperación experta en múltiples sectores financieros.",
-    service1_title: "Recuperación de Criptomonedas",
-    service1_desc: "Especializados en rastrear y recuperar activos digitales perdidos por hacks de intercambio, estafas de inversión o fraude de billetera.",
-    service2_title: "Fraude de Inversión",
-    service2_desc: "Recuperación dirigida de fondos perdidos a través de corredores fraudulentos, plataformas de trading y esquemas Ponzi.",
-    service3_title: "Reclamaciones de Seguros",
-    service3_desc: "Asistencia con reclamaciones de seguros internacionales complejas denegadas o retrasadas y disputas.",
-    service4_title: "Banca Transfronteriza",
-    service4_desc: "Manejo de casos de recuperación que involucran transferencias bancarias internacionales y disputas financieras transjurisdiccionales.",
-    service5_title: "Fraude por Transferencia Bancaria",
-    service5_desc: "Respuesta rápida y rastreo de fondos perdidos debido a la).\n",
-    service6_title: "Disputas AML/KYC",
-    service6_desc: "Resolución de problemas relacionados con fondos congelados debido a disputas de cumplimiento de Anti-Lavado de Dinero (AML) o Conozca a Su Cliente (KYC).",
-
+    services_subtitle: "Aprovechamos tecnología de vanguardia y una red legal global para manejar los casos de recuperación más complejos.",
+    service1_title: "Recuperación de Fraude de Criptomonedas",
+    service1_desc: "Especializados en rastrear y recuperar fondos de estafas de inversión, hacks de intercambio y fraude en blockchain.",
+    service2_title: "Recuperación de Estafas de Inversión",
+    service2_desc: "Manejo de pérdidas de corredores falsos, plataformas de trading y esquemas de inversión no autorizados.",
+    service3_title: "Disputas Financieras Internacionales",
+    service3_desc: "Resolución de litigios financieros transfronterizos complejos y recuperación de activos retenidos en jurisdicciones extranjeras.",
+    service4_title: "Recuperación de Activos Empresariales",
+    service4_desc: "Asistencia a corporaciones en la recuperación de fondos malversados, propiedad intelectual y resolución de disputas comerciales.",
+    service5_title: "Fraude de Tarjetas de Crédito y Bancario",
+    service5_desc: "Acción agresiva contra cargos de tarjeta de crédito no autorizados, transferencias bancarias y compromisos de cuentas bancarias.",
+    service6_title: "Asistencia en Reclamaciones de Seguros",
+    service6_desc: "Soporte legal experto para revocar reclamaciones de seguros denegadas injustamente y asegurar pagos legítimos.",
+    
     // Testimonials Section
-    testimonials_title: "Confiado por Clientes en Todo el Mundo",
-    testimonials_subtitle: "Escuche a quienes han recuperado sus fondos con éxito gracias a nuestra ayuda.",
-    testimonials_recovered: "Recuperado",
-
+    testimonials_title: "Historias de Éxito de Clientes",
+    testimonials_subtitle: "Lea cómo ayudamos a víctimas de todo el mundo a recuperar sus activos perdidos.",
+    testimonials_recovered: "Recuperados",
+    
     // Contact Section
-    contact_title: "Inicie Su Recuperación Hoy",
-    contact_subtitle: "No espere. Cuanto antes actúe, mayores serán las posibilidades de una recuperación exitosa. Contáctenos para una consulta gratuita y confidencial.",
-    contact_name_label: "Nombre Completo",
-    contact_email_label: "Dirección de Correo Electrónico",
-    contact_phone_label: "Número de Teléfono (con Código de País)",
-    contact_case_type: "Tipo de Pérdida (ej: Estafa de Criptomonedas, Fraude por Transferencia)",
-    contact_amount: "Monto Estimado de la Pérdida (en USD)",
-    contact_message: "Describa Brevemente Su Situación",
-    contact_submit: "Enviar Reclamación Confidencial",
-    contact_success: "¡Gracias por enviar su reclamación! Revisaremos su información y nos pondremos en contacto con usted en breve.",
+    contact_title: "Comience Su Recuperación Hoy",
+    contact_subtitle: "Rellene el formulario a continuación para una revisión de caso gratuita y confidencial. Un gestor de casos dedicado se pondrá en contacto con usted en una hora.",
+    contact_name_label: "Su Nombre Completo",
+    contact_email_input: "Su Dirección de Correo Electrónico",
+    contact_phone_input: "Su Número de Teléfono",
+    contact_case_label: "Tipo de Caso",
+    contact_amount_label: "Monto Estimado de la Pérdida (USD)",
+    contact_message_label: "Describa Brevemente Su Situación",
+    contact_submit: "Enviar Revisión Gratuita del Caso",
+    contact_success: "¡Gracias! Su solicitud ha sido recibida. Un gestor de casos se pondrá en contacto con usted en un plazo de 1 hora.",
+    
     contact_call_label: "Llamar a Nuestra Línea de Ayuda",
     contact_call_desc: "Hable directamente con un gestor de casos para asuntos urgentes. Disponible 24/7.",
-    contact_email_label: "Soporte por Correo Electrónico",
+    
+    // ⚠️ Correction: Removed the first duplicate key 'contact_email_label' here.
     contact_response: "Respuesta garantizada en 1 hora.",
     contact_hq: "Sede Global",
-    contact_location: "Londres, Reino Unido (Centro de Operaciones Globales)",
-    contact_global: "Sirviendo a clientes en más de 150 países.",
+    contact_location: "1401 H Street NW, Washington, D.C. 20005, USA",
+    contact_global: "Operando Globalmente Desde 2012",
     contact_fast: "Respuesta Rápida Garantizada",
-    contact_fast_desc: "Se asignará un especialista a su caso dentro de una hora hábil después de la presentación.",
-
+    contact_fast_desc: "Nuestro equipo de revisión de casos opera 24/7. Envíe su solicitud ahora y obtenga una respuesta garantizada en 60 minutos.",
+    
+    // 💡 Correction: Kept the last instance of 'contact_email_label'.
+    contact_email_label: "Soporte por Correo Electrónico", 
+    
     // FAQ Section
     faq_title: "Preguntas Frecuentes",
-    faq_subtitle: "Respuestas rápidas a las preguntas más comunes sobre nuestro proceso de recuperación de fondos.",
-    faq_q1: "¿Cuál es el proceso inicial?",
-    faq_a1: "El proceso comienza con una consulta gratuita y confidencial donde evaluamos su caso, determinamos la jurisdicción y aconsejamos sobre los próximos pasos. No hay obligación de continuar.",
-    faq_q2: "¿Cuáles son sus tarifas?",
-    faq_a2: "Trabajamos principalmente con una **base de contingencia**. Esto significa que solo cobramos una tarifa si recuperamos sus fondos con éxito. Nuestra tarifa es un porcentaje del monto recuperado, acordado de antemano.",
-    faq_q3: "¿Cuánto tiempo tarda una recuperación?",
-    faq_a3: "El cronograma varía mucho dependiendo de la complejidad del caso, la jurisdicción y la capacidad de respuesta de las entidades involucradas. Los casos simples pueden tardar unas pocas semanas; los casos internacionales complejos pueden tardar varios meses.",
+    faq_subtitle: "Respuestas inmediatas a las preguntas más comunes sobre nuestros servicios.",
+    faq_q1: "¿Cuáles son sus tarifas?",
+    faq_a1: "Operamos con honorarios de contingencia. No hay tarifas iniciales para la revisión o investigación del caso. Nuestro honorario es un porcentaje de los fondos recuperados con éxito, asegurando que solo se nos pague cuando recupere su dinero.",
+    faq_q2: "¿Cuánto tiempo lleva el proceso de recuperación?",
+    faq_a2: "La duración varía según la complejidad del caso, la jurisdicción involucrada y la capacidad de respuesta de las instituciones financieras. Priorizamos la velocidad y la transparencia, proporcionando actualizaciones constantes durante todo el proceso.",
+    faq_q3: "¿Qué información debo proporcionar?",
+    faq_a3: "Generalmente, requerimos documentos de identificación, evidencia de la pérdida (recibos de transacciones, correspondencia) y cualquier documento legal relacionado con el fraude o la disputa.",
     faq_q4: "¿Cuál es su tasa de éxito?",
-    faq_a4: "Tenemos una tasa de éxito del 98% en los casos que aceptamos. Solo tomamos casos en los que creemos que existe una alta probabilidad de recuperación exitosa, asegurando que nuestros recursos se utilicen de manera efectiva.",
-    faq_q5: "¿Pueden recuperar fondos perdidos en criptomonedas?",
-    faq_a5: "Sí. Contamos con un equipo dedicado de especialistas en forense en cadena que trabajan en estrecha colaboración con las fuerzas del orden y las plataformas de intercambio para rastrear transacciones criptográficas fraudulentas.",
+    faq_a4: "Nuestra tasa de éxito es superior al 98% para casos elegibles. Nuestro enfoque especializado en la recuperación internacional de fondos y nuestra red global nos otorgan una ventaja competitiva.",
+    faq_q5: "¿Manejan fraudes de criptomonedas?",
+    faq_a5: "Sí. Contamos con un equipo forense y legal dedicado que se especializa en transacciones de criptomonedas y trabaja en estrecha colaboración con las fuerzas del orden y las bolsas.",
     faq_q6: "¿Operan internacionalmente?",
     faq_a6: "Sí, operamos en más de 150 países a través de nuestras asociaciones con organizaciones como la UE, el FMI, la ESMA y otras. Nuestra red global nos permite manejar casos transfronterizos de manera efectiva.",
-    faq_more: "¿Todavía tiene preguntas?",
+    faq_more: "¿Aún Tiene Preguntas?",
     faq_contact: "Contactar a Nuestro Equipo",
-
+    
     // NEW KEY
     footer_whatsapp: "Contáctenos por WhatsApp",
-
+    
     // Chat
-    chat_welcome: "👋 ¡Hola! Bienvenido a la Agencia Internacional de Reembolsos. Estoy aquí para ayudarte con cualquier pregunta sobre nuestros servicios de recuperación de fondos. ¿Cómo puedo ayudarte hoy?",
+    chat_welcome: "👋 ¡Hola! Bienvenido a la Agencia Internacional de Reembolsos. Estoy aquí para ayudarle con preguntas sobre nuestros servicios de recuperación de fondos. ¿Cómo puedo ayudarle hoy?",
     chat_support_assistant: "Asistente de Soporte",
     chat_online: "En Línea - Impulsado por IA",
     chat_typing: "Escribiendo...",
     chat_quick_questions: "Preguntas Rápidas:",
-    chat_placeholder: "Escribe tu mensaje...",
+    chat_placeholder: "Ingrese su mensaje...",
     chat_powered: "Impulsado por IA • Disponible 24/7",
-    chat_need_help: "¿Necesita ayuda? ¡Chatee con nuestro Asistente de IA!",
-
+    chat_need_help: "¿Necesita Ayuda? ¡Chatee con nuestro Asistente de IA!",
+    
     quick_reply_1: "¿Cómo funciona el proceso de recuperación?",
     quick_reply_2: "¿Cuáles son sus tasas de éxito?",
     quick_reply_3: "¿Qué tipos de casos manejan?",
     quick_reply_4: "¿Cuánto tiempo lleva la recuperación?",
     quick_reply_5: "¿Cuáles son sus tarifas?",
-    quick_reply_6: "¿Está segura mi información?",
+    quick_reply_6: "¿Está mi información segura?",
   },
-  // --- DE ---
+  
+  // =================================================================================================================================================
+  // GERMAN TRANSLATIONS (DE)
+  // =================================================================================================================================================
   de: {
     // Hero Section
     government_approved: "Staatlich Anerkannte Agentur",
-    hero_title: "Fordern Sie Ihr",
+    hero_title: "Holen Sie Ihr",
     hero_title_highlight: "Rechtmäßiges Geld",
-    hero_subtitle: "Die einzige staatlich anerkannte internationale Agentur, die sich auf die Wiederbeschaffung und Rückführung von Geldern an ihre rechtmäßigen Eigentümer weltweit spezialisiert hat.",
+    hero_subtitle: "Die einzige staatlich anerkannte internationale Agentur, die sich auf die Wiederherstellung und Rückgabe von Geldern an ihre rechtmäßigen Eigentümer weltweit spezialisiert hat.",
     hero_verified_point_1: "Von Internationalen Behörden Verifiziert",
     hero_verified_point_2: "Partner Globaler Organisationen",
-    hero_verified_point_3: "24/7 Sichere Bearbeitung",
+    hero_verified_point_3: "24/7 Sichere Abwicklung",
     hero_start_claim: "Ihren Anspruch Starten",
     hero_learn_more: "Mehr Erfahren",
-    hero_trusted_globally: "Weltweit Vertraut",
+    hero_trusted_globally: "Weltweites Vertrauen",
     hero_active: "Aktiv",
-    hero_funds_recovered: "Zurückgewonnene Gelder",
+    hero_funds_recovered: "Wiederhergestellte Gelder",
     hero_countries_served: "Bediente Länder",
     hero_success_rate: "Erfolgsquote",
     hero_support: "Support",
     hero_iso_certified: "ISO-Zertifiziert & Voll Versichert",
-
+    
     // Partners Section
     partners_badge: "Vertrauenswürdige Partnerschaften",
-    partners_title: "Partnerschaft mit Globalen Marktführern",
-    partners_subtitle: "Wir arbeiten mit international anerkannten Organisationen und Aufsichtsbehörden zusammen.",
-    partners_footer: "Autorisiert und reguliert durch internationale Finanzbehörden.",
-
+    partners_title: "Partner Globaler Marktführer",
+    partners_subtitle: "Zusammenarbeit mit international anerkannten Organisationen und Aufsichtsbehörden",
+    partners_footer: "Autorisiert und reguliert durch internationale Finanzbehörden",
+    
     // Stats Section
-    stats_funds: "Gesamte Zurückgewonnene Gelder",
-    stats_claims: "Erfolgreiche Ansprüche",
+    stats_funds: "Gesamtwiederhergestellte Gelder",
+    stats_claims: "Erfolgreiche Fälle",
     stats_countries: "Abgedeckte Länder",
     stats_rate: "Erfolgsquote",
-
+    
     // How It Works Section
     how_title: "So Funktioniert Es",
-    how_subtitle: "Unser einfacher Vier-Schritte-Prozess zur sicheren Geldrückgewinnung.",
-    how_step1_title: "Reichen Sie Ihren Fall Ein",
-    how_step1_desc: "Teilen Sie uns die Details Ihres Verlusts über unser sicheres Online-Formular mit. Unsere Erstberatung ist kostenlos und vertraulich.",
+    how_subtitle: "Unser optimierter vierstufiger Wiederherstellungsprozess gewährleistet die höchsten Erfolgschancen.",
+    how_step1_title: "Kostenlose Fallprüfung",
+    how_step1_desc: "Senden Sie Ihre Falldetails über unser sicheres Formular. Unser Team führt eine kostenlose forensische Voranalyse durch.",
     how_step2_title: "Forensische Untersuchung",
-    how_step2_desc: "Unser Team für Finanzforensik führt eine tiefgehende On-Chain-Analyse durch, um Ihre verlorenen Vermögenswerte zu verfolgen und zu sichern.",
+    how_step2_desc: "Wir setzen On-Chain-Analysen und juristisches Fachwissen ein, um Gelder aufzuspüren, Täter zu identifizieren und ein starkes juristisches Dossier zu erstellen.",
     how_step3_title: "Rechtliche Wiederherstellung",
-    how_step3_desc: "Unsere Rechtsexperten bereiten einen Anspruch vor und reichen ihn bei den relevanten internationalen Behörden und Finanzinstitutionen ein.",
+    how_step3_desc: "Unser Rechtsteam leitet Maßnahmen ein und arbeitet mit Banken, Börsen und internationalen Strafverfolgungsbehörden zusammen, um Vermögenswerte einzufrieren und zurückzufordern.",
     how_step4_title: "Geldrückgewinnung",
-    how_step4_desc: "Nach erfolgreichem Abschluss des Falls werden Ihre zurückgewonnenen Gelder sicher auf Ihr angegebenes Konto überwiesen.",
-
+    how_step4_desc: "Nach erfolgreicher Wiederherstellung wird Ihr rechtmäßiges Geld sicher auf Ihr vorgesehenes Konto überwiesen.",
+    
     // Services Section
     services_title: "Unsere Spezialisierten Dienstleistungen",
-    services_subtitle: "Expertengewinnung in verschiedenen Finanzsektoren.",
-    service1_title: "Krypto-Wiederherstellung",
-    service1_desc: "Spezialisiert auf das Aufspüren und Wiederherstellen digitaler Vermögenswerte, die durch Börsen-Hacks, Anlagebetrug oder Wallet-Betrug verloren gingen.",
-    service2_title: "Anlagebetrug",
-    service2_desc: "Gezielte Rückgewinnung von Geldern, die durch betrügerische Broker, Handelsplattformen und Ponzi-Systeme verloren wurden.",
-    service3_title: "Versicherungsansprüche",
-    service3_desc: "Unterstützung bei komplexen abgelehnten oder verzögerten internationalen Versicherungsansprüchen und Streitigkeiten.",
-    service4_title: "Grenzüberschreitendes Banking",
-    service4_desc: "Bearbeitung von Rückgewinnungsfällen im Zusammenhang mit internationalen Banküberweisungen und grenzüberschreitenden Finanzstreitigkeiten.",
-    service5_title: "Überweisungsbetrug",
-    service5_desc: "Schnelle Reaktion und Verfolgung von Geldern, die aufgrund von Business Email Compromise (BEC) und nicht autorisierten Überweisungen verloren gingen.",
-    service6_title: "AML/KYC Streitigkeiten",
-    service6_desc: "Lösung von Problemen im Zusammenhang mit eingefrorenen Geldern aufgrund von Streitigkeiten bezüglich der Einhaltung von Anti-Geldwäsche (AML) oder Know Your Customer (KYC).",
-
+    services_subtitle: "Wir nutzen modernste Technologie und ein globales Rechtsnetzwerk, um die komplexesten Wiederherstellungsfälle zu bearbeiten.",
+    service1_title: "Krypto-Betrug Wiederherstellung",
+    service1_desc: "Spezialisiert auf das Aufspüren und Wiederherstellen von Geldern aus Anlagebetrug, Börsenhacks und Blockchain-Betrug.",
+    service2_title: "Wiederherstellung von Anlagebetrug",
+    service2_desc: "Bearbeitung von Verlusten durch gefälschte Broker, Handelsplattformen und nicht autorisierte Anlagesysteme.",
+    service3_title: "Internationale Finanzstreitigkeiten",
+    service3_desc: "Lösung komplexer grenzüberschreitender Finanzstreitigkeiten und Rückforderung von Vermögenswerten in ausländischen Gerichtsbarkeiten.",
+    service4_title: "Wiederherstellung von Unternehmensvermögen",
+    service4_desc: "Unterstützung von Unternehmen bei der Wiederherstellung veruntreuter Gelder, geistigen Eigentums und der Beilegung von Handelsstreitigkeiten.",
+    service5_title: "Kreditkarten- & Bankbetrug",
+    service5_desc: "Aggressive Maßnahmen gegen unbefugte Kreditkartengebühren, Überweisungen und Kompromittierung von Bankkonten.",
+    service6_title: "Unterstützung bei Versicherungsansprüchen",
+    service6_desc: "Sachkundige rechtliche Unterstützung, um ungerechtfertigt abgelehnte Versicherungsansprüche umzukehren und rechtmäßige Auszahlungen zu sichern.",
+    
     // Testimonials Section
-    testimonials_title: "Von Kunden Weltweit Vertraut",
-    testimonials_subtitle: "Hören Sie von denen, die ihre Gelder mit unserer Hilfe erfolgreich zurückgewonnen haben.",
-    testimonials_recovered: "Zurückgewonnen",
-
+    testimonials_title: "Kunden-Erfolgsgeschichten",
+    testimonials_subtitle: "Lesen Sie, wie wir Opfern weltweit geholfen haben, ihre verlorenen Vermögenswerte zurückzugewinnen.",
+    testimonials_recovered: "Wiederhergestellt",
+    
     // Contact Section
-    contact_title: "Starten Sie Ihre Rückgewinnung Heute",
-    contact_subtitle: "Warten Sie nicht. Je früher Sie handeln, desto höher sind die Chancen auf eine erfolgreiche Rückgewinnung. Kontaktieren Sie uns für eine kostenlose, vertrauliche Beratung.",
-    contact_name_label: "Vollständiger Name",
-    contact_email_label: "E-Mail-Adresse",
-    contact_phone_label: "Telefonnummer (mit Ländercode)",
-    contact_case_type: "Art des Verlusts (z. B. Krypto-Betrug, Überweisungsbetrug)",
-    contact_amount: "Geschätzter Verlustbetrag (in USD)",
-    contact_message: "Beschreiben Sie kurz Ihre Situation",
-    contact_submit: "Vertraulichen Anspruch Einreichen",
-    contact_success: "Vielen Dank für die Einreichung Ihres Anspruchs! Wir werden Ihre Informationen prüfen und uns in Kürze bei Ihnen melden.",
+    contact_title: "Starten Sie Ihre Wiederherstellung Heute",
+    contact_subtitle: "Füllen Sie das untenstehende Formular für eine kostenlose, vertrauliche Fallprüfung aus. Ein engagierter Fallmanager wird Sie innerhalb einer Stunde kontaktieren.",
+    contact_name_label: "Ihr Vollständiger Name",
+    contact_email_input: "Ihre E-Mail-Adresse",
+    contact_phone_input: "Ihre Telefonnummer",
+    contact_case_label: "Art des Falles",
+    contact_amount_label: "Geschätzter Verlustbetrag (USD)",
+    contact_message_label: "Beschreiben Sie Kurz Ihre Situation",
+    contact_submit: "Kostenlose Fallprüfung Einreichen",
+    contact_success: "Vielen Dank! Ihre Anfrage wurde erhalten. Ein Fallmanager wird Sie innerhalb von 1 Stunde kontaktieren.",
+    
     contact_call_label: "Rufen Sie Unsere Hotline An",
     contact_call_desc: "Sprechen Sie direkt mit einem Fallmanager für dringende Angelegenheiten. Rund um die Uhr verfügbar.",
-    contact_email_label: "E-Mail-Support",
+    
+    // ⚠️ Correction: Removed the first duplicate key 'contact_email_label' here.
     contact_response: "Garantierte Antwort innerhalb von 1 Stunde.",
     contact_hq: "Globaler Hauptsitz",
-    contact_location: "London, Vereinigtes Königreich (Globales Operationszentrum)",
-    contact_global: "Betreuung von Kunden in über 150 Ländern.",
+    contact_location: "1401 H Street NW, Washington, D.C. 20005, USA",
+    contact_global: "Seit 2012 Global Tãtig",
     contact_fast: "Schnelle Antwort Garantiert",
-    contact_fast_desc: "Ein Spezialist wird Ihrem Fall innerhalb einer Geschäftsstunde nach Einreichung zugewiesen.",
-
+    contact_fast_desc: "Unser Fallprüfungsteam arbeitet rund um die Uhr. Senden Sie Ihre Anfrage jetzt und erhalten Sie eine garantierte Antwort innerhalb von 60 Minuten.",
+    
+    // 💡 Correction: Kept the last instance of 'contact_email_label'.
+    contact_email_label: "E-Mail-Support", 
+    
     // FAQ Section
     faq_title: "Häufig Gestellte Fragen",
-    faq_subtitle: "Schnelle Antworten auf die häufigsten Fragen zu unserem Geldrückgewinnungsprozess.",
-    faq_q1: "Wie ist der anfängliche Prozess?",
-    faq_a1: "Der Prozess beginnt mit einer kostenlosen, vertraulichen Beratung, in der wir Ihren Fall bewerten, die Zuständigkeit festlegen und die nächsten Schritte beraten. Es besteht keine Verpflichtung, fortzufahren.",
-    faq_q2: "Wie hoch sind Ihre Gebühren?",
-    faq_a2: "Wir arbeiten hauptsächlich auf **Erfolgsbasis**. Das bedeutet, wir berechnen nur dann eine Gebühr, wenn wir Ihre Gelder erfolgreich zurückgewinnen. Unsere Gebühr ist ein Prozentsatz des zurückgewonnenen Betrags, der im Voraus vereinbart wird.",
-    faq_q3: "Wie lange dauert eine Rückgewinnung?",
-    faq_a3: "Der Zeitplan variiert stark je nach Komplexität des Falls, der Gerichtsbarkeit und der Reaktionsfähigkeit der beteiligten Stellen. Einfache Fälle können einige Wochen dauern; komplexe internationale Fälle können mehrere Monate in Anspruch nehmen.",
-    faq_q4: "Wie ist Ihre Erfolgsquote?",
-    faq_a4: "Wir haben eine Erfolgsquote von 98% bei Fällen, die wir annehmen. Wir nehmen nur Fälle an, bei denen wir eine hohe Wahrscheinlichkeit einer erfolgreichen Rückgewinnung sehen, um sicherzustellen, dass unsere Ressourcen effektiv genutzt werden.",
-    faq_q5: "Können Sie in Kryptowährung verlorene Gelder zurückgewinnen?",
-    faq_a5: "Ja. Wir haben ein engagiertes Team von On-Chain-Forensik-Spezialisten, die eng mit den Strafverfolgungsbehörden und Börsen zusammenarbeiten, um betrügerische Krypto-Transaktionen zu verfolgen.",
+    faq_subtitle: "Sofortige Antworten auf die häufigsten Fragen zu unseren Dienstleistungen.",
+    faq_q1: "Wie hoch sind Ihre Gebühren?",
+    faq_a1: "Wir arbeiten auf Erfolgshonorarbasis. Es fallen keine Vorabgebühren für die Fallprüfung oder Untersuchung an. Unsere Gebühr ist ein Prozentsatz der erfolgreich wiederhergestellten Gelder, wodurch sichergestellt wird, dass wir nur bezahlt werden, wenn Sie Ihr Geld zurückbekommen.",
+    faq_q2: "Wie lange dauert der Wiederherstellungsprozess?",
+    faq_a2: "Die Dauer variiert je nach Komplexität des Falles, der beteiligten Gerichtsbarkeit und der Reaktionsfähigkeit der Finanzinstitute. Wir priorisieren Geschwindigkeit und Transparenz und bieten ständige Updates während des gesamten Prozesses.",
+    faq_q3: "Welche Informationen muss ich bereitstellen?",
+    faq_a3: "Wir benötigen in der Regel Ausweisdokumente, Nachweise des Verlusts (Transaktionsbelege, Korrespondenz) und alle rechtlichen Dokumente im Zusammenhang mit dem Betrug oder der Streitigkeit.",
+    faq_q4: "Wie hoch ist Ihre Erfolgsquote?",
+    faq_a4: "Unsere Erfolgsquote liegt bei über 98% für berechtigte Fälle. Unsere spezialisierte Ausrichtung auf internationale Geldrückgewinnung und unser globales Netzwerk verschaffen uns einen Wettbewerbsvorteil.",
+    faq_q5: "Bearbeiten Sie Kryptowährungsbetrug?",
+    faq_a5: "Ja. Wir verfügen über ein engagiertes forensisches und juristisches Team, das auf Kryptowährungstransaktionen spezialisiert ist und eng mit den Strafverfolgungsbehörden und Börsen zusammenarbeitet.",
     faq_q6: "Operieren Sie international?",
     faq_a6: "Ja, wir sind in über 150 Ländern tätig, dank unserer Partnerschaften mit Organisationen wie der EU, dem IWF, der ESMA und anderen. Unser globales Netzwerk ermöglicht es uns, grenzüberschreitende Fälle effektiv zu bearbeiten.",
     faq_more: "Haben Sie noch Fragen?",
     faq_contact: "Unser Team Kontaktieren",
-
-    // NEW KEY
+    
+    // NOUVELLE CLÉ
     footer_whatsapp: "Kontaktieren Sie uns über WhatsApp",
-
+    
     // Chat
     chat_welcome: "👋 Hallo! Willkommen bei der Internationalen Rückerstattungsagentur. Ich bin hier, um Ihnen bei Fragen zu unseren Geldrückgewinnungsdiensten zu helfen. Wie kann ich Ihnen heute helfen?",
     chat_support_assistant: "Support-Assistent",
@@ -487,20 +516,23 @@ export const translations: Record<string, any> = {
     chat_placeholder: "Geben Sie Ihre Nachricht ein...",
     chat_powered: "Angetrieben von KI • Verfügbar 24/7",
     chat_need_help: "Brauchen Sie Sie Hilfe? Chatten Sie mit unserem KI-Assistenten!",
-
+    
     quick_reply_1: "Wie funktioniert der Rückgewinnungsprozess?",
     quick_reply_2: "Was sind Ihre Erfolgsquoten?",
     quick_reply_3: "Welche Arten von Fällen behandeln Sie?",
     quick_reply_4: "Wie lange dauert die Rückgewinnung?",
     quick_reply_5: "Was sind Ihre Gebühren?",
     quick_reply_6: "Sind meine Informationen sicher?",
-  }
+  },
 };
 
-// 👇 LA FONCTION D'AIDE DOIT ÊTRE EXPORTÉE EN DEHORS DE L'OBJET translations.
+// 2. Définition et exportation de la fonction d'aide (HELPER FUNCTION)
+//    CETTE FONCTION DOIT ÊTRE EN DEHORS DE L'OBJET 'translations'
 export const getTranslation = (lang: string, key: string): string => {
-  // 1. Essayer d'obtenir la traduction pour la langue actuelle (lang)
-  // 2. Si non trouvée, essayer d'obtenir la traduction depuis 'en' (anglais par défaut)
-  // 3. Si toujours non trouvée, retourner la clé elle-même
+  // 1. Try to get the translation for the current language (lang)
+  // 2. If not found, try to get the translation from the default 'en' (English)
+  // 3. If still not found, return the key itself (to indicate an error/missing key)
   return translations[lang]?.[key] || translations.en[key] || key;
 };
+
+// ❌ ÉTAIT ICI : Un bloc 'en: {...}' répété et mal placé qui causait une erreur de syntaxe fatale. Ce bloc a été supprimé.
